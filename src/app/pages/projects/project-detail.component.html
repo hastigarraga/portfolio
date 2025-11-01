@@ -1,0 +1,31 @@
+<ng-container *ngIf="project; else missing">
+  <ui-section-header>{{project.title}}</ui-section-header>
+  <ui-card>
+    <p class="text-white/80">{{project.summary}}</p>
+    <div class="mt-4 grid md:grid-cols-2 gap-4">
+      <div>
+        <h4 class="font-semibold mb-2">Descripción</h4>
+        <ul class="list-disc list-inside space-y-1">
+          <li *ngFor="let d of project.description">{{d}}</li>
+        </ul>
+        <h4 class="font-semibold mt-4 mb-2">Highlights</h4>
+        <ul class="list-disc list-inside space-y-1">
+          <li *ngFor="let h of project.highlights">{{h}}</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Ficha técnica</h4>
+        <p><strong>Rol:</strong> {{project.role}}</p>
+        <p class="mt-1"><strong>Tecnologías:</strong> {{project.tech.join(', ')}}</p>
+        <div class="mt-3 flex gap-3">
+          <a *ngIf="project.links.demo" [href]="project.links.demo" target="_blank" rel="noopener" class="chip">Demo</a>
+          <a *ngIf="project.links.repo" [href]="project.links.repo" target="_blank" rel="noopener" class="chip">Repo</a>
+          <a *ngIf="project.links.case" [href]="project.links.case" target="_blank" rel="noopener" class="chip">Caso</a>
+        </div>
+      </div>
+    </div>
+  </ui-card>
+</ng-container>
+<ng-template #missing>
+  <ui-card>Proyecto no encontrado.</ui-card>
+</ng-template>

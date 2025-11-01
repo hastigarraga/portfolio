@@ -1,0 +1,191 @@
+{
+  "profile": {
+    "name": "Hernán Astigarraga",
+    "role": "Full Stack Developer | AI & No-Code | Integrations & Technical Support",
+    "bio": "Desarrollador Full Stack especializado en arquitectura backend inteligente, agentes conversacionales y automatización con IA. Diseño sistemas basados en LangChain, LangGraph y MCP que integran Google Workspace, APIs y entornos No-Code bajo flujos escalables y seguros. Experiencia sólida en Node.js, Express, TypeScript, MongoDB y OAuth2, combinando LLMs (OpenAI, Gemini, Phi-3) con embeddings y Pinecone. Desarrollo frontend y maquetación con Angular, HTML, CSS y WordPress, más soporte técnico avanzado y documentación de procesos.",
+    "avatar": "/assets/68700774_10217752522317853_5916948797547610112_o.jpg",
+    "location": "Córdoba, Argentina",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "experience_years": 3,
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "MongoDB",
+      "LangGraph",
+      "LangChain",
+      "MCP",
+      "Pinecone",
+      "OAuth2",
+      "Bubble.io",
+      "Zapier"
+    ],
+    "languages": ["ES", "EN-B2"]
+  },
+
+  "contact": {
+    "email": "hernan.astigarraga@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/hernan-astigarraga/",
+    "github": "https://github.com/hastigarraga",
+    "phone": "REEMPLAZAR_PHONE"
+  },
+
+  "skills": {
+    "tech": [
+      { "name": "Node.js / Express", "level": 5 },
+      { "name": "TypeScript / JavaScript", "level": 5 },
+      { "name": "Angular", "level": 4 },
+      { "name": "LangGraph / LangChain", "level": 4 },
+      { "name": "MCP", "level": 4 },
+      { "name": "OAuth2 / JWT", "level": 4 },
+      { "name": "MongoDB", "level": 4 },
+      { "name": "Pinecone", "level": 4 },
+      { "name": "Docker", "level": 3 },
+      { "name": "HTML / CSS / Angular Material", "level": 4 }
+    ],
+
+    "soft": [
+      "Liderazgo técnico",
+      "Documentación clara",
+      "Soporte técnico avanzado",
+      "Autonomía y mentoría",
+      "Comunicación técnica",
+      "Gestión de prioridades",
+      "Resolución de problemas",
+      "Trabajo en equipo"
+    ],
+
+    "certs": [
+      { "name": "Full Stack Web Developer", "issuer": "Soy Henry Bootcamp"},
+      { "name": "HTML", "issuer": "Coderhouse", "year": 0 },
+      { "name": "CSS", "issuer": "Coderhouse", "year": 0 },
+      { "name": "Bubble", "issuer": "Udemy", "year": 0 },
+      { "name": "Zapier", "issuer": "Udemy", "year": 0 },
+      { "name": "Notion", "issuer": "Udemy", "year": 0 },
+      { "name": "Airtable", "issuer": "Udemy", "year": 0 }
+    ]
+  },
+
+  "projects": [
+    {
+      "title": "Maia — Asistente con LangGraph + MCP",
+      "slug": "maia-assistant",
+      "summary": "Asistente IA modular con agentes y memoria persistente.",
+      "description": [
+        "Arquitectura backend modular con Node.js, Express y MongoDB.",
+        "Implementación de OAuth2 multiusuario para integraciones seguras con Google Workspace.",
+        "Flujos LangChain y embeddings con Pinecone para respuestas contextuales.",
+        "Sistema MCP que orquesta herramientas y APIs desde LangGraph.",
+        "Reducción de latencia del sistema en un 40 %."
+      ],
+      "role": "Full-Stack Developer",
+      "impact": "-40 % latencia · OAuth2 multiusuario · LangChain + LangGraph",
+      "tech": ["Angular", "Node.js", "Express", "TypeScript", "MongoDB", "LangGraph", "LangChain", "MCP", "Pinecone", "OAuth2"],
+      "links": {
+        "demo": "https://maia-webapp-gold.vercel.app/"
+      },
+      "status": "online",
+      "date": "2025-02",
+      "featured": true
+    },
+
+    {
+      "title": "Workflow Engine — No-Code Automation",
+      "slug": "workflow-engine",
+      "summary": "Automatización de procesos entre Notion, Gmail y Airtable.",
+      "description": [
+        "Diseño de flujos automatizados con Zapier y APIs REST personalizadas.",
+        "Reducción de tiempos operativos 25-35 %.",
+        "Implementación de panel de control para monitorear ejecución y errores.",
+        "Integración con Airtable y Notion para trazabilidad completa."
+      ],
+      "role": "Consultor IA & No-Code",
+      "impact": "-30 % tiempo operativo · Integraciones Notion / Gmail / Airtable",
+      "tech": ["Bubble.io", "Zapier", "Airtable", "Notion", "Node.js", "REST APIs"]
+    },
+
+    {
+      "title": "Document Agent — Generador de documentos IA",
+      "slug": "document-agent",
+      "summary": "Creación automática de documentos en LangGraph.",
+      "description": [
+        "Flujo de decisión con nodos LangGraph y agentes especializados.",
+        "Plantillas dinámicas generadas mediante LLMs y OpenAI API.",
+        "Exportación automática en Markdown / PDF con Supabase y Google Drive.",
+        "Gestión de memoria y contexto entre sesiones."
+      ],
+      "role": "Full-Stack Developer",
+      "impact": "Automatización documental · Plantillas IA dinámicas",
+      "tech": ["LangGraph", "Node.js", "OpenAI", "Supabase", "Google Drive"]
+    }
+  ],
+
+  "ui": {
+    "palette": {
+      "primary": "#0EA5E9",
+      "secondary": "#8B5CF6",
+      "background": "#0B0F17"
+    },
+    "fonts": { "heading": "Inter", "body": "Inter" },
+    "style": "cv-tech",
+    "density": "media",
+    "darkMode": "auto"
+  },
+
+  "seo": {
+    "title": "Hernán Astigarraga — Portfolio",
+    "description": "Full Stack Developer con foco en IA, LangGraph y MCP. Integraciones seguras, automatización No-Code y soporte técnico avanzado.",
+    "ogImage": "/assets/og-cover.png"
+  },
+
+  "extras": {
+    "experience": [
+      {
+        "company": "Bardo Digital (Barcelona, ES)",
+        "role": "Full Stack Developer",
+        "period": "Feb 2025 – Actualidad",
+        "details": [
+          "Arquitectura backend modular con Node.js, Express y MongoDB.",
+          "Implementación de OAuth2 multiusuario y flujos seguros Google Workspace.",
+          "Integración de LangChain y Pinecone para búsquedas contextuales.",
+          "Diseño MCP y LangGraph con nodos de decisión y memoria persistente."
+        ]
+      },
+      {
+        "company": "Coderhouse (Bubble.io)",
+        "role": "Tutor Adjunto",
+        "period": "Ene 2024 – Actualidad",
+        "details": [
+          "Asistencia y mentoría en proyectos No-Code y automatización con Bubble.",
+          "Diseño de ejemplos prácticos de APIs, seguridad y lógica condicional.",
+          "Soporte técnico y seguimiento personalizado a estudiantes."
+        ]
+      },
+      {
+        "company": "Freelance",
+        "role": "Consultor IA & No-Code",
+        "period": "Mar 2023 – Dic 2023",
+        "details": [
+          "Automatizaciones con Bubble, WordPress y Zapier (20–35 % menos tiempo operativo).",
+          "Micro-APIs seguras en Node.js/Express con JWT y CORS tipado.",
+          "Documentación y soporte técnico bajo acuerdos NDA."
+        ]
+      },
+      {
+        "company": "Bardo Digital (Barcelona, ES)",
+        "role": "Full Stack Developer",
+        "period": "Nov 2021 – Feb 2023",
+        "details": [
+          "Desarrollo frontend y backend con Bubble.io y Webflow.",
+          "Integraciones REST y funcionalidades No-Code para clientes empresariales."
+        ]
+      }
+    ],
+
+    "education": [
+      { "title": "Ing. en Sistemas de Información (en curso)", "org": "UTN – FR Córdoba", "year": 0 },
+      { "title": "Full Stack Web Developer (800 h)", "org": "Soy Henry Bootcamp", "year": 2023 }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<section class="mx-auto max-w-3xl px-4 md:px-6">
+  <h1 class="text-2xl font-bold mb-4">Contacto</h1>
+
+  <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.04]">
+    <form [formGroup]="f" (ngSubmit)="submit()" novalidate class="space-y-4">
+      <!-- honeypot oculto -->
+      <input formControlName="website" tabindex="-1" autocomplete="off"
+             class="absolute opacity-0 pointer-events-none h-0 w-0" aria-hidden="true"/>
+
+      <div>
+        <label class="block text-sm text-white/70 mb-1">Nombre</label>
+        <input class="w-full rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none"
+               formControlName="name" placeholder="Tu nombre" />
+        <p *ngIf="name.invalid && name.touched" class="text-xs text-red-400 mt-1">Ingresá un nombre válido.</p>
+      </div>
+
+      <div>
+        <label class="block text-sm text-white/70 mb-1">Email</label>
+        <input type="email" class="w-full rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none"
+               formControlName="email" placeholder="tu@email.com" />
+        <p *ngIf="email.invalid && email.touched" class="text-xs text-red-400 mt-1">Ingresá un email válido.</p>
+      </div>
+
+      <div>
+        <label class="block text-sm text-white/70 mb-1">Mensaje</label>
+        <textarea rows="6" class="w-full rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none"
+                  formControlName="message" placeholder="Contame brevemente qué necesitás"></textarea>
+        <p *ngIf="message.invalid && message.touched" class="text-xs text-red-400 mt-1">Mínimo 10 caracteres.</p>
+      </div>
+
+      <button type="submit" class="ui-btn-primary h-11 px-6 font-semibold"
+              [disabled]="f.invalid || sending">
+        {{ sending ? 'Enviando…' : 'Enviar' }}
+      </button>
+
+      <p *ngIf="ok" class="text-green-400 text-sm">Mensaje enviado. Te respondo en breve.</p>
+      <p *ngIf="err" class="text-red-400 text-sm">No se pudo enviar. Probá nuevamente.</p>
+    </form>
+  </div>
+</section>

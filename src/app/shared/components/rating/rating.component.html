@@ -1,0 +1,5 @@
+<div class="flex gap-1" role="img" aria-label="Calificación">
+  <ng-container *ngFor="let s of stars; let i = index">
+    <span [attr.aria-hidden]="true">{{ i < value ? '★' : '☆' }}</span>
+  </ng-container>
+</div>

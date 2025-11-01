@@ -1,0 +1,53 @@
+/* Sass tokens */
+$color-primary: #0EA5E9;
+$color-secondary: #8B5CF6;
+$radius-lg: 1rem;
+$shadow-soft: 0 10px 25px rgba(0,0,0,.25);
+
+:root {
+  --color-primary: #0EA5E9;
+  --color-secondary: #8B5CF6;
+  --radius-lg: #{$radius-lg};
+  --shadow-soft: #{$shadow-soft};
+}
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { color-scheme: dark light; }
+  :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded-2xl font-medium transition;
+    background: var(--color-primary);
+    box-shadow: var(--shadow-soft);
+  }
+  .card { @apply rounded-2xl p-6 bg-white/5 backdrop-blur border border-white/10; }
+  .chip { @apply inline-flex items-center px-3 py-1 rounded-full text-sm bg-white/10; }
+}
+
+/* Ritmo y legibilidad */
+html, body { height: 100%; }
+body {
+  @apply tracking-[-0.01em] antialiased font-body bg-bg text-white;
+}
+
+/* Cards accesibles en dark */
+.card { @apply rounded-2xl border border-white/10 bg-white/[0.04] p-4; }
+
+/* Botones */
+.ui-btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-primary text-black
+         hover:brightness-110 active:brightness-95 transition-all;
+}
+.ui-btn-ghost {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/0
+         hover:bg-white/5 active:bg-white/10 text-white/90 transition-all;
+}
+
+/* Microinteracciones globales */
+.chip, .btn, .card { @apply transition-all duration-200; }

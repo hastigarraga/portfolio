@@ -1,0 +1,27 @@
+<!-- src/app/core/layout/layout.component.html -->
+<header class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+  <a routerLink="/" class="flex items-center gap-3 focus:outline-none focus-visible:ring-2 ring-primary rounded-xl">
+    <img [src]="avatar" width="40" height="40" alt="Avatar"
+         class="rounded-full border border-white/20"
+         (error)="onImgError($event)">
+    <span class="font-heading text-lg">Hernán Astigarraga</span>
+  </a>
+  <nav class="flex items-center gap-4">
+    <a routerLink="/projects" class="chip">Proyectos</a>
+    <a routerLink="/about" class="chip">Sobre mí</a>
+    <a routerLink="/contact" class="chip">Contacto</a>
+  </nav>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 pb-20">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="max-w-6xl mx-auto px-4 py-12 text-sm text-white/70 flex flex-col gap-2">
+  <div class="flex items-center gap-4">
+    <a class="underline" href="mailto:hernan.astigarraga@gmail.com">Email</a>
+    <a class="underline" href="https://www.linkedin.com/in/hernan-astigarraga/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="underline" href="https://github.com/hastigarraga" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div>© {{ year }} Hernán Astigarraga</div>
+</footer>

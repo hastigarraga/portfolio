@@ -1,0 +1,21 @@
+# Angular
+dist/
+.angular/
+node_modules/
+
+# Env y llaves
+.env
+.env.*.local
+tokens/
+*.key
+*.pem
+*.p12
+*.crt
+
+# Editor/SO
+.DS_Store
+Thumbs.db
+.vscode/
+
+
+
