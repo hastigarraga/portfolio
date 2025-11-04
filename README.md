@@ -16,6 +16,21 @@ npm run start
 npm run build
 ```
 
+## Testing
+```bash
+npm run lint
+```
+> Asegurate de tener Node.js instalado localmente para poder ejecutar los comandos de npm.
+
+## Contacto (emails)
+Para recibir los mensajes del formulario de contacto configurá las siguientes variables de entorno en tu deploy (por ejemplo en Vercel):
+
+- `RESEND_API_KEY`: API key de Resend.
+- `RESEND_FROM`: remitente verificado (ej. `Portfolio <contacto@tudominio.com>`).
+- `CONTACT_TO`: dirección donde querés recibir los mails.
+
+Sin estos valores la función serverless `/api/contact` responderá con error 500.
+
 ## SEO
 - Metatags OG/Twitter dinámicos por ruta en `SeoService`.
 - `robots.txt` y `sitemap.xml` en `src/`. Tras build, ejecutar:

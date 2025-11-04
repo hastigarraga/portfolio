@@ -18,9 +18,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const apiKey = process.env.RESEND_API_KEY || '';
-  const from = process.env.RESEND_FROM || 'Portfolio <contact@tudominio.com>';
-  const to = process.env.CONTACT_TO || 'hernan.astigarraga@gmail.com';
+  const from = process.env.RESEND_FROM || '';
+  const to = process.env.CONTACT_TO || '';
   if (!apiKey) return res.status(500).json({ error: 'RESEND_API_KEY faltante' });
+  if (!from) return res.status(500).json({ error: 'RESEND_FROM faltante' });
+  if (!to) return res.status(500).json({ error: 'CONTACT_TO faltante' });
 
   try {
     const resend = new Resend(apiKey);
